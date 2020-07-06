@@ -1,0 +1,13 @@
+<!-- <app-hijo></app-hijo>
+<app-padre></app-padre>
+
+
+<router-outlet></router-outlet> -->
+
+<button  mat-stroked-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/hijo-component']" routerLinkActive="active">Ingreso </button>
+    <button mat-menu-item [routerLink]="['/padre-componet']" routerLinkActive="active">Consulta </button>
+</mat-menu>
+
+<router-outlet></router-outlet>

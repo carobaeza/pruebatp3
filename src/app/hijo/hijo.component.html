@@ -1,0 +1,42 @@
+
+<form [formGroup]='celularForm' >
+    <div class="datosDispositivo">
+        <!-- String -->
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+                <input matInput type="text" formControlName="nombre">          
+        </mat-form-field>
+        <!-- int -->
+    <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Nro serie</mat-label>
+                <input matInput type="int" formControlName="serie">
+        </mat-form-field>
+        <!-- Date -->
+        <mat-form-field appearance="outline">
+        <mat-label>Fecha fabricacion</mat-label>
+            <input matInput type="date" formControlName="fechaFabricado">           
+        </mat-form-field>
+        
+        <!-- Array
+        <div formArrayName="marcas">
+               
+              <mat-form-field appearance="outline"> -->
+                <!-- <mat-label>Marca</mat-label>
+                <div *ngFor="let marca of marcas.controls; let i = index" class="marca">
+                    
+                        <input matInput type="text" [formControlName] ="i">
+                </div> --> 
+            <!-- </mat-form-field>
+     -->
+            <!-- <button type="button" mat-raised-button color="primary" (click)="addMarca()">Agregar marca</button>
+    
+         </div> -->
+        
+    
+        <button type="submit" mat-raised-button color="primary">Guardar</button>
+        <!-- <button (click)="goToListar(celularForm)">Modificar</button> -->
+        
+    </div> 
+
+</form>
